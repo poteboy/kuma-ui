@@ -1,0 +1,52 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`App > renders unchanged 1`] = `
+<DocumentFragment>
+  .kuma-0 {
+  padding: 2px;
+  color: red;
+}
+
+.kuma-1 {
+  color: red;
+}
+
+.kuma-2 {
+  color: blue;
+}
+
+.kuma-3 {
+  padding: 10px 12px;
+  font-size: 16px;
+}
+
+@media (min-width:400px) {
+  .kuma-0 {
+    padding: 4px;
+  }
+}
+
+.kuma-0:hover {
+  color: black;
+}
+
+  <div>
+    <div
+      class="kuma-0"
+    >
+      hello
+    </div>
+    <p
+      class="kuma-2 kuma-1"
+    >
+      world
+    </p>
+    <button
+      class="kuma-3"
+      disabled=""
+    >
+      button
+    </button>
+  </div>
+</DocumentFragment>
+`;
