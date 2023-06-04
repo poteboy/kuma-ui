@@ -42,7 +42,7 @@ export type StyleFunction = (props: StyledProps) => ResponsiveStyle;
  */
 export const compose = (...styleFunctions: StyleFunction[]): StyleFunction => {
   return (props: StyledProps): ResponsiveStyle => {
-    const cacheKey = JSON.stringify(props);
+    const cacheKey = calculateKey(props)
     let outputProps = { ...props };
 
     const cachedStyles = styleCache.get(cacheKey);
@@ -82,3 +82,7 @@ export const compose = (...styleFunctions: StyleFunction[]): StyleFunction => {
     return combinedStyles;
   };
 };
+
+export const calculateKey = (props: StyledProps): string => {
+  return JSON.stringify(props);
+}
