@@ -1,3 +1,4 @@
+import { AnimationProps } from "./animation";
 import { SpaceProps } from "./space";
 import { TypographyProps } from "./typography";
 import { LayoutProps } from "./layout";
@@ -19,6 +20,7 @@ import { MaskProps } from "./mask";
 import { ColumnProps } from "./column";
 
 export type StyledProps<T extends ThemeSystemType = ThemeSystemType> = SpaceProps &
+  AnimationProps &
   TypographyProps &
   TextProps &
   FontProps &

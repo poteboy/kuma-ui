@@ -1,3 +1,4 @@
+import { animation, AnimationProps } from "./animation";
 import { space, SpaceProps } from "./space";
 import { typography, TypographyProps } from "./typography";
 import { layout, LayoutProps } from "./layout";
@@ -23,6 +24,7 @@ export { StyledKeyType, isStyledProp } from "./keys";
 export * from "./types";
 
 export const all = compose(
+  animation,
   space,
   typography,
   layout,
@@ -43,6 +45,7 @@ export const all = compose(
 
 export { normalizePseudo, isPseudoProps };
 export type {
+  AnimationProps,
   SpaceProps,
   TypographyProps,
   LayoutProps,
