@@ -1,18 +1,3 @@
-import {
-  Box,
-  Button,
-  Flex,
-  Spacer,
-  Text,
-  Heading,
-  Select,
-  Input,
-  HStack,
-  VStack,
-  Image,
-  Link,
-  Grid,
-} from "./index";
 import { isBoxProps, boxHandler, boxDefaultProps } from "./Box/handler";
 import {
   isButtonProps,
@@ -54,20 +39,20 @@ import { match } from "ts-pattern";
 import { StyledProps } from "@kuma-ui/system";
 
 export const componentList = Object.freeze({
-  Box: Box.name as "Box",
-  Flex: Flex.name as "Flex",
-  Spacer: Spacer.name as "Spacer",
-  Text: Text.name as "Text",
-  Button: Button.name as "Button",
-  Heading: Heading.name as "Heading",
-  Select: Select.name as "Select",
-  Input: Input.name as "Input",
-  HStack: HStack.name as "HStack",
-  VStack: VStack.name as "VStack",
-  Image: Image.name as "Image",
-  Link: Link.name as "Link",
-  Grid: Grid.name as "Grid",
-} as const);
+  Box: "Box",
+  Flex: "Flex",
+  Spacer: "Spacer",
+  Text: "Text",
+  Button: "Button",
+  Heading: "Heading",
+  Select: "Select",
+  Input: "Input",
+  HStack: "HStack",
+  VStack: "VStack",
+  Image: "Image",
+  Link: "Link",
+  Grid: "Grid",
+});
 
 type ComponentName = keyof typeof componentList;
 
